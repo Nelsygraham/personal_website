@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Website</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Glitch:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Allura&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="scripts.js"></script>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">NelsyGraham</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero-section">
+    <div class="container text-center">
+        <!-- Your Photo (displaying only the upper half) -->
+        <div class="upper-half-photo">
+            <img src="nelsy4.jpg" alt="NelsyGraham" class="img-fluid" width="300">
+        </div>
+        
+        <h1>Tech, Adventure, Weird: Where Pixels Dance</h1>
+        
+        <!-- Catchy Tagline (Newly Added) -->
+        <h2 class="catchy-tagline">Crafting Digital Experiences with a Twist</h2>
+
+        <p>Step into the digital realm where tech meets adventure, and weird is celebrated. Join me on a journey of innovation, exploration, and a touch of eccentricity. Welcome to my world – a fusion of code, creativity, and curiosity.</p>
+
+        <!-- View Portfolio Button (Updated) -->
+        <a class="btn btn-primary" href="#portfolio">Explore Portfolio</a>
+    </div>
+</section>
+
+<!-- About Me Section -->
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <!-- Larger Photo -->
+                <img src="nelsy1.jpg" alt="Nelson Gatonye" class="img-fluid rounded-circle larger-photo">
+            </div>
+            <div class="col-md-6">
+                <h2>About Me</h2>
+                <p>
+                    Hi there! I'm Nelson Gatonye, a passionate software engineer with a love for adventure and the great outdoors. I specialize in crafting software solutions that make a meaningful impact. Whether it's coding elegant algorithms or embarking on thrilling adventures, I thrive on challenges and innovation.
+                </p>
+                <p>
+                    My journey in the software world is fueled by curiosity and a relentless pursuit of knowledge. I'm well-versed in various programming languages, frameworks, and technologies, always eager to explore emerging trends.
+                </p>
+                <p>
+                    Beyond the keyboard, you'll find me on the open road, engaging in adventure touring, cycling through nature's wonders, and soaking in the inspiration that surrounds me. And when it's time to unwind, I enjoy listening to music that resonates with my eclectic tastes.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Resume Section -->
+<section id="resume" class="resume-section">
+    <div class="container text-center">
+        <h2>Resume</h2>
+        <p>Explore my resume to learn more about my skills and experience.</p>
+
+        <!-- View Button -->
+        <button class="btn btn-secondary" onclick="openResume()">View Resume</button>
+
+        <!-- Download Button -->
+        <a class="btn btn-primary" href="resume.pdf" download>Download Resume</a>
+    </div>
+</section>
+
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio-section">
+    <div class="container">
+        <h2>Portfolio</h2>
+
+        <!-- Project 1: Gaming Website -->
+        <div class="project" id="project1">
+            <img src="games.jpg" alt="Gaming Website">
+            <h3>Gaming Website</h3>
+            <p>An online gaming platform where users can access a variety of games. Developed using HTML, CSS, JavaScript, and Node.js.</p>
+            <a href="#" onclick="toggleDetails('project1-details')">View Details</a>
+            <!-- Details Section (Initially Hidden) -->
+            <div class="project-details" id="project1-details">
+                <h4>Details:</h4>
+                <ul>
+                    <li>Developed with Node.js and Express for the backend</li>
+                    <li>Used MongoDB as the database to store game information</li>
+                    <li>Implemented user authentication and authorization</li>
+                    <!-- Add more details as needed -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- Project 2: Online Auction System -->
+        <div class="project" id="project2">
+            <img src="auction.jpg" alt="Online Auction System">
+            <h3>Online Auction System</h3>
+            <p>A real-time bidding platform for online auctions. Built with HTML, CSS, JavaScript, and Python Django framework.</p>
+            <a href="#" onclick="toggleDetails('project2-details')">View Details</a>
+            <!-- Details Section (Initially Hidden) -->
+            <div class="project-details" id="project2-details">
+                <h4>Details:</h4>
+                <ul>
+                    <li>Developed with Django framework for the backend</li>
+                    <li>Used WebSockets for real-time bidding functionality</li>
+                    <li>Integrated a responsive front-end using HTML, CSS, and JavaScript</li>
+                    <!-- Add more details as needed -->
+                </ul>
+            </div>
+        </div> 
+
+        <!-- Project 3: Bidding Behavior Prediction ML Project -->
+        <div class="project" id="project3">
+            <img src="bid.jpg" alt="Bidding Behavior Prediction ML Project">
+            <h3>Bidding Behavior Prediction</h3>
+            <p>An ML project for predicting bidding behavior. Presented through an HTML form. Utilizes machine learning techniques for prediction.</p>
+            <a href="#" onclick="toggleDetails('project3-details')">View Details</a>
+            <!-- Details Section (Initially Hidden) -->
+            <div class="project-details" id="project3-details">
+                <h4>Details:</h4>
+                <ul>
+                    <li>Implemented machine learning model using scikit-learn library</li>
+                    <li>Created an interactive HTML form for user input</li>
+                    <li>Utilized Flask for serving the ML model and handling form submissions</li>
+                    <!-- Add more details as needed -->
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section">
+    <div class="container">
+        <h2>Skills</h2>
+
+        <!-- Skill Categories -->
+        <div class="skill-category">
+            <h3>Programming Languages</h3>
+            <ul>
+                <li>JavaScript</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Python</li>
+                <li>Node.js</li>
+                <li>Java</li>
+                <!-- Add more programming languages as needed -->
+            </ul>
+        </div>
+
+        <div class="skill-category">
+            <h3>Web Development</h3>
+            <ul>
+                <li>React.js</li>
+                <li>Vue.js</li>
+                <li>Django</li>
+                <li>Bootstrap</li>
+                <!-- Add more web development frameworks/tools as needed -->
+            </ul>
+        </div>
+
+        <div class="skill-category">
+            <h3>Machine Learning</h3>
+            <ul>
+                <li>Scikit-Learn</li>
+                <li>TensorFlow</li>
+                <li>PyTorch</li>
+                <!-- Add more machine learning libraries/frameworks as needed -->
+            </ul>
+        </div>
+
+        <!-- Add more skill categories as needed -->
+
+    </div>
+</section>
+
+
+<!-- Interests Section -->
+<section id="interests" class="interests-section">
+    <div class="container">
+        <h2>Interests</h2>
+
+        <!-- Interests List with Images -->
+        <ul class="interests-list">
+            <li>
+                <div class="interest">
+                    <img src="adventure.jpg" alt="Adventure Touring">
+                    <p>Adventure Touring</p>
+                </div>
+            </li>
+            <li>
+                <div class="interest">
+                    <img src="nature.jpg" alt="Nature Exploration">
+                    <p>Nature Exploration</p>
+                </div>
+            </li>
+            <li>
+                <div class="interest">
+                    <img src="cycling.jpg" alt="Cycling">
+                    <p>Cycling</p>
+                </div>
+            </li>
+            <li>
+                <div class="interest">
+                    <img src="music.jpg" alt="Listening to Music">
+                    <p>Listening to Music</p>
+                </div>
+            </li>
+            <!-- Add more interests as needed -->
+        </ul>
+    </div>
+</section>
+
+
+<!-- Contacts Section -->
+<section id="footer" style="margin-bottom: 20px;">
+    <div>
+      <footer class="bg-dark text-light py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="contact-info">
+                <h4>Contact Me</h4>
+                <p>
+                  <strong>Email:</strong> <a href="mailto:gatonyenelson264@gmail.com">gatonyenelson264@gmail.com</a>
+                </p>
+                <p>
+                  <strong>Phone:</strong> <a href="tel:+254745806960">+254 745 806 960</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="social-media">
+                <h4>Connect with Me</h4>
+                <div class="social-icons">
+                  <a href="https://twitter.com/@nelsygraham" target="_blank">
+                    <img src="https://m-cdn.phonearena.com/images/articles/404364-image/F1usc-KXgAEVxSh.jpg" alt="Twitter" width="30" height="30">
+                  </a>
+                  <a href="https://www.linkedin.com/in/nelson-gatonye-5b2908231" target="_blank">
+                    <img src="https://img.freepik.com/premium-vector/square-linkedin-logo-isolated-white-background_469489-892.jpg?w=2000" alt="LinkedIn" width="30" height="30">
+                  </a>
+                  <a href="https://www.facebook.com/profile.php?id=100070840803023" target="_blank">
+                    <img src="https://img.freepik.com/premium-vector/blue-social-media-logo_197792-1759.jpg" alt="Facebook" width="30" height="30">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <p class="text-center">&copy; 2024 NelsyGraham LTD. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </section>
+
+<!-- Bootstrap JS and your custom JS -->
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="scripts.js"></script> -->
+
+</body>
+</html>
